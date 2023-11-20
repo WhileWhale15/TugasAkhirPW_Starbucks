@@ -33,7 +33,9 @@ header .logo {
 
 header .navigation {
   position: relative;
-  display: flex;
+    display: flex;
+    letter-spacing: 0.1rem;
+    gap: 30px;
 }
 
 header .navigation li {

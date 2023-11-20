@@ -10,6 +10,13 @@ header {
   background: #1e3932;
 }
 
+header .navigation {
+    margin-left: auto !important;
+    letter-spacing: 0.1rem !important;
+    margin-right: 5em !important;
+    gap: 30px !important;
+}
+
 header .navigation li a {
   color: #f2f0eb;
 }

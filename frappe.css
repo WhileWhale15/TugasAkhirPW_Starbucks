@@ -17,7 +17,10 @@ header {
 header .nav {
   position: relative;
   display: flex;
-  margin-left: 40em;
+  margin-left: auto;
+  letter-spacing: 0.1rem;
+  margin-right: 5em;
+  gap: 30px;
 }
 
 header .nav li {
@@ -36,7 +39,7 @@ header .nav li a {
   margin-top: 0;
   position: relative;
   top: 0;
-  width: 1425px;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,15 +107,15 @@ header .nav li a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1425px;
+  width: auto;
+  max-width: 100%;
   margin: 130px 90px;
 }
 
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-template-rows: 1fr;
-  gap: 10px; /* Adjust the gap as needed */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .product-category {
@@ -122,7 +125,7 @@ header .nav li a {
 .frappe-content {
   position: relative;
   display: grid;
-  width: 1425px;
+  width: auto;
 }
 
 .frappe-content .frappe-textBox {
@@ -216,7 +219,6 @@ header .nav li a {
   background: #f2f0eb;
   height: calc((100% - 30px) / 2) !important;
   width: 100%;
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
