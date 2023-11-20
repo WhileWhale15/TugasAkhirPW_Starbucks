@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../frappe.css" />
+    <link rel="stylesheet" href="../merch.css" />
+    <title>Starbucks | Menu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html">
+        <img src="../assets/img/logo.png" class="logo" />
+      </a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="navigation center text-white">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/menu.html">Menu</a></li>
+        <li><a href="../pages/merch.html">Merch</a></li>
+        <li><a href="../pages/aboutus.html">About Us</a></li>
+      </ul>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/Starbucks/" target="_blank"
+            ><img src="../assets/img/facebook.png" id="facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Starbucks" target="_blank"
+            ><img src="../assets/img/twitter.png" id="twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/starbucks/" target="_blank"
+            ><img src="../assets/img/instagram.png" id="instagram"
+          /></a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="container">
+      <div class="title">
+        <div class="main-title">
+          <h2>
+            <p>Find The Perfect <span>Tumbler</span> For You</p>
+          </h2>
+        </div>
+        <div class="subtitle">
+          <p>
+            We provide many sizes to fit your needs. It perfect to keep your
+            drink cold or hot for a long time.
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <img class="product" src="../assets/img/merch/img1.png" width="350px" />
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    function toggleMenu() {
+      var menuToggle = document.querySelector(".toggle");
+      var navigation = document.querySelector(".navigation");
+      var social = document.querySelector(".social");
+      menuToggle.classList.toggle("active");
+      navigation.classList.toggle("active");
+      social.classList.toggle("active");
+    }
+  </script>
+</html>

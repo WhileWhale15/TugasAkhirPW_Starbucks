@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../frappe.css" />
+    <link rel="stylesheet" href="../menu.css" />
+    <title>Starbucks | Menu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="menu">
+      <header>
+        <a href="../index.html">
+          <img src="../assets/img/logo.png" class="logo" />
+        </a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation center text-white">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/menu.html">Menu</a></li>
+          <li><a href="../pages/merch.html">Merch</a></li>
+          <li><a href="../pages/aboutus.html">About Us</a></li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a href="https://www.facebook.com/Starbucks/" target="_blank"
+              ><img src="../assets/img/facebook.png" id="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Starbucks" target="_blank"
+              ><img src="../assets/img/twitter.png" id="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/starbucks/" target="_blank"
+              ><img src="../assets/img/instagram.png" id="instagram"
+            /></a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="container">
+        <div class="Main">
+          <div class="Title">Discover Our Menu</div>
+          <div class="Sub-title">See it all in one place.</div>
+          <div class="Caption">
+            Explore real-life examples of how our brand expression has come to
+            life across product launches.
+          </div>
+          <div class="Tab-Container">
+            <ul class="flex zoom-scroll-tabs" style="list-style: none">
+              <li
+                class="current-zoom-scroll-tab w-1-4 active"
+                onclick="selectTab('frappe'); changeTab(this, 'bakery')"
+              >
+                <span
+                  class="uppercase font-semibold text-xxxs tracking-wide p-2 tab"
+                  >Frappe</span
+                >
+              </li>
+              <li
+                class="w-1-4"
+                onclick="selectTab('coffee'); changeTab(this, 'pies')"
+              >
+                <span
+                  class="uppercase font-semibold text-xxxs tracking-wide p-2 tab"
+                  >Coffee</span
+                >
+              </li>
+              <li
+                class="w-1-4"
+                onclick="selectTab('food'); changeTab(this, 'cakes')"
+              >
+                <span
+                  class="uppercase font-semibold text-xxxs tracking-wide p-2 tab"
+                  >Food</span
+                >
+              </li>
+            </ul>
+
+            <div class="goto">
+              <a
+                href="#menu-content"
+                style="
+                  color: #f2f0eb;
+                  text-decoration: none;
+                  display: inline-block;
+                "
+                onclick="navigateToSelectedTab()"
+              >
+                Click Here For More
+              </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 42"
+                width="32"
+                height="42"
+                style="
+                  transform: rotate(270deg);
+                  transform-origin: right;
+                  margin-left: 10px;
+                  display: inline-block;
+                "
+                onclick="navigateToSelectedTab()"
+              >
+                <desc>Scroll Indicator</desc>
+                <polygon
+                  points="30.605 25.641 16.5 39.746 16.5 1.048 15.5 1.048 15.5 39.746 1.396 25.641 0.689 26.348 16 41.66 31.312 26.348 30.605 25.641"
+                ></polygon>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script type="text/javascript">
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".navigation");
+        var social = document.querySelector(".social");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+        social.classList.toggle("active");
+      }
+
+      function changeTab(tab, productId) {
+        const tabs = document.querySelectorAll(".w-1-4");
+        tabs.forEach((t) => t.classList.remove("active"));
+
+        tab.classList.add("active");
+
+        const productItems = document.querySelectorAll(".product-category");
+        productItems.forEach((item) => {
+          if (item.id === productId) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      }
+
+      let selectedTab = "frappe";
+
+      function selectTab(tabName) {
+        selectedTab = tabName;
+      }
+
+      function navigateToSelectedTab() {
+        if (selectedTab === "frappe") {
+          window.location.href = "menu-frappe.html";
+        } else if (selectedTab === "coffee") {
+          window.location.href = "menu-coffee.html";
+        } else if (selectedTab === "food") {
+          window.location.href = "menu-food.html";
+        }
+      }
+    </script>
+  </body>
+</html>

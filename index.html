@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Starbucks | Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#">
+          <img src="./assets/img/logo.png" class="logo" />
+        </a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./pages/menu.html">Menu</a></li>
+          <li><a href="./pages/merch.html">Merch</a></li>
+          <li><a href="./pages/aboutus.html">About Us</a></li>
+        </ul>
+      </header>
+
+      <div id="home">
+        <div class="content">
+          <div class="textBox">
+            <h2>
+              <p id="displayCategory">It's not just Frappe</p>
+              It's
+              <span>Starbucks</span>
+            </h2>
+            <p id="displayText">
+              At Starbucks, our frappes are renowned for their delectable and
+              refreshing blended beverages. We offer a wide variety of flavors,
+              from classics like the Caramel Frappuccino to our seasonal
+              favorites, providing you with the perfect indulgence when you're
+              craving something sweet.
+            </p>
+            <a href="./pages/menu-frappe.html" class="goto">Learn More</a>
+          </div>
+          <div class="imgBox">
+            <img src="./assets/img/img1.png" class="starbucks" />
+          </div>
+        </div>
+      </div>
+
+      <ul class="thumb">
+        <li>
+          <img
+            id="img1"
+            src="./assets/img/thumb1.png"
+            onclick="imgSlider('./assets/img/img1.png');
+                changeCircleColor('#017143');
+                changeCategory('It\'s not just Frappe');
+                changeText('At Starbucks, our frappes are renowned for their delectable and refreshing blended beverages. We offer a wide variety of flavors, from classics like the Caramel Frappuccino to our seasonal favorites, providing you with the perfect indulgence when you\'re craving something sweet.');
+                changeGoTo('./pages/menu-frappe.html');"
+          />
+        </li>
+        <li>
+          <img
+            id="img2"
+            src="./assets/img/thumb21.png"
+            onclick="imgSlider('./assets/img/img21.png');
+                changeCircleColor('#B3702F');
+                changeCategory('It\'s not just Coffee');
+                changeText('At Starbucks, we take great pride in our expertly roasted beans, ensuring each cup is rich, aromatic, and unique. From our bold and robust dark roasts to our smooth and mild blends, Starbucks offers a coffee experience that is nothing short of exceptional.');
+                changeGoTo('./pages/menu-coffee.html');"
+          />
+        </li>
+        <li>
+          <img
+            id="img3"
+            src="./assets/img/thumb3.png"
+            onclick="imgSlider('./assets/img/img3.png');
+                changeCircleColor('#F0CDBC');
+                changeCategory('It\'s not just Food');
+                changeText('We offer a delightful menu of food that perfectly complement your drinks. Our selection includes wholesome salads, freshly baked pastries, and delicious sandwiches. Every item is crafted with quality ingredients, providing a delectable pairing for your favorite drinks. Whether you\'re seeking a quick breakfast on the go or a leisurely lunch, we\'ve got you covered.');
+                changeGoTo('./pages/menu-food.html');"
+          />
+        </li>
+      </ul>
+
+      <ul class="sci">
+        <li>
+          <a href="https://www.facebook.com/Starbucks/" target="_blank"
+            ><img src="./assets/img/facebook.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Starbucks" target="_blank"
+            ><img src="./assets/img/twitter.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/starbucks/" target="_blank"
+            ><img src="./assets/img/instagram.png"
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- JS -->
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".starbucks").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+
+      function changeCategory(newText) {
+        document.getElementById("displayCategory").textContent = newText;
+      }
+
+      function changeText(newText) {
+        document.getElementById("displayText").textContent = newText;
+      }
+
+      function changeGoTo(any) {
+        document.querySelector(".goto").href = any;
+      }
+
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

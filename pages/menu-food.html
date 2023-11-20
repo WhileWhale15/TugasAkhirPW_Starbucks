@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../frappe.css" />
+    <title>Food | Menu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section>
+      <header>
+        <a href="../index.html">
+          <img src="../assets/img/logo.png" class="logo" width="70px" />
+        </a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/menu.html">Menu</a></li>
+          <li><a href="../pages/merch.html">Merch</a></li>
+          <li><a href="../pages/aboutus.html">About Us</a></li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a href="https://www.facebook.com/Starbucks/" target="_blank"
+              ><img src="../assets/img/facebook.png" id="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Starbucks" target="_blank"
+              ><img src="../assets/img/twitter.png" id="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/starbucks/" target="_blank"
+              ><img src="../assets/img/instagram.png" id="instagram"
+            /></a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="container">
+        <div class="frappe-content">
+          <div class="frappe-textBox">
+            <h2>
+              It's
+              <span>Food</span>
+            </h2>
+            <p>
+              We offer a delightful menu of food that perfectly complement your
+              drinks. Our selection includes wholesome salads, freshly baked
+              pastries, and delicious sandwiches. Every item is crafted with
+              quality ingredients, providing a delectable pairing for your
+              favorite drinks. Whether you're seeking a quick breakfast on the
+              go or a leisurely lunch, we've got you covered.
+            </p>
+          </div>
+
+          <div class="tab-container">
+            <ul class="flex zoom-scroll-tabs">
+              <li
+                class="current-zoom-scroll-tab w-1-4 active"
+                onclick="changeTab(this, 'bakery')"
+              >
+                <span
+                  class="uppercase font-semibold text-xxxs tracking-wide p-2 tab"
+                  >Bakery</span
+                >
+              </li>
+              <li class="w-1-4" onclick="changeTab(this, 'pies')">
+                <span
+                  class="uppercase font-semibold text-xxxs tracking-wide p-2 tab"
+                  >Pies</span
+                >
+              </li>
+              <li class="w-1-4" onclick="changeTab(this, 'cakes')">
+                <span
+                  class="uppercase font-semibold text-xxxs tracking-wide p-2 tab"
+                  >Cakes</span
+                >
+              </li>
+              <li
+                class="w-1-4 sandwich-tab"
+                onclick="changeTab(this, 'sandwiches')"
+              >
+                <span
+                  class="uppercase font-semibold text-xxxs tracking-wide p-2 tab"
+                  >Sandwiches</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Start of Food Section -->
+          <div class="product-grid my-4 overflow-auto pb-6">
+            <!-- Start of Bakery Section -->
+            <div class="product-category" id="bakery">
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img1.jpg"
+                    alt="Beef Sausage & Cheese Croissant "
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">
+                      Beef Sausage & Cheese Croissant
+                    </h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img2.jpg"
+                    alt="Almond Croissant"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Almond Croissant</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img3.jpg"
+                    alt="Chocolate Croissant"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Chocolate Croissant</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img4.jpg"
+                    alt="Cheese Bagels"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Cheese Bagels</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img5.jpg"
+                    alt="Bagel Bites"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Bagel Bites</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img6.jpg"
+                    alt="Srikaya Swirl Danish"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Srikaya Swirl Danish</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img7.jpg"
+                    alt="Cinnamon Roll"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Cinnamon Roll</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img8.jpg"
+                    alt="Tuna Puff"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Tuna Puff</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img9.jpg"
+                    alt="Spicy Tuna Bread"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Spicy Tuna Bread</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img10.jpg"
+                    alt="Pillow Glazed Doughnut"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Pillow Glazed Doughnut</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img11.jpg"
+                    alt="Nutella Bombolone"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Nutella Bombolone</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img12.jpg"
+                    alt="Cinnamon Chocolate Marble Cake"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">
+                      Cinnamon Chocolate Marble Cake
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img13.jpg"
+                    alt="Sumatra Chocolate Éclair"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Sumatra Chocolate Éclair</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img14.jpg"
+                    alt="Raisin Oatmeal Scones"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Raisin Oatmeal Scones</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img15.jpg"
+                    alt="Espresso Brownie"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Espresso Brownie</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img16.jpg"
+                    alt="7 Seeds Cookie"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">7 Seeds Cookie</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img17.jpg"
+                    alt="Peanut Butter Cornflakes Cookie"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">
+                      Peanut Butter Cornflakes Cookie
+                    </h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img18.jpg"
+                    alt="Old Fashioned Blueberry Muffin"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">
+                      Old Fashioned Blueberry Muffin
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img19.jpg"
+                    alt="Chocolate Chip Cookies"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Chocolate Chip Cookies</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img20.jpg"
+                    alt="Chocolate Stroopwafel"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Chocolate Stroopwafel</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img21.jpg"
+                    alt="Caramel Stroopwafel"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Caramel Stroopwafel</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/bakery/img22.jpg"
+                    alt="Raisin Oatmeal Cookies"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Raisin Oatmeal Cookies</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Bakery Section -->
+
+            <!-- Start of Pies Section -->
+            <div class="product-category" id="pies">
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/pies/img1.jpg"
+                    alt="Smoked Beef Quiche"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Smoked Beef Quiche</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/pies/img2.jpg"
+                    alt="Cheese Quiche"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Cheese Quiche</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Pies Section -->
+
+            <!-- Start of Cakes Section -->
+            <div class="product-category" id="cakes">
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/cakes/img1.jpg"
+                    alt="Via Red Velvet Roll Cake"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Via Red Velvet Roll Cake</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/cakes/img2.jpg"
+                    alt="Classic Dark Chocolate Cake"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">
+                      Classic Dark Chocolate Cake
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/cakes/img3.jpg"
+                    alt="Scarlet Velvet Cake"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Scarlet Velvet Cake</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/cakes/img4.jpg"
+                    alt="New York Cheesecake"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">New York Cheesecake</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/cakes/img5.jpg"
+                    alt="Oreo Cheesecake"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Oreo Cheesecake</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/cakes/img6.jpg"
+                    alt="Avocado Medley Cake"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Avocado Medley Cake</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/cakes/img7.jpg"
+                    alt="Starbucks Vanilla Cheesecake"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">
+                      Starbucks Vanilla Cheesecake
+                    </h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/cakes/img8.jpg"
+                    alt="Starbucks Pandan Gula Aren Cake"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">
+                      Starbucks Pandan Gula Aren Cake
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Cakes Section -->
+
+            <!-- Start of Sandwiches Section -->
+            <div class="product-category" id="sandwiches">
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/sandwiches/img1.jpg"
+                    alt="Peanut Butter Panini"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Peanut Butter Panini</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/sandwiches/img2.jpg"
+                    alt="Classic Tuna Toastie"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Classic Tuna Toastie</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/sandwiches/img3.jpg"
+                    alt="All Day B'Fast Bun"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">All Day B'Fast Bun</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/sandwiches/img4.jpg"
+                    alt="Beef Filone"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Beef Filone</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/sandwiches/img5.jpg"
+                    alt="Trio Mixed Roll"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">Trio Mixed Roll</h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/sandwiches/img6.jpg"
+                    alt="Tuna Cheese Whole Wheat Panini"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">
+                      Tuna Cheese Whole Wheat Panini
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 space-y-4">
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/sandwiches/img7.jpg"
+                    alt="Smoked Beef Mushroom & Cheese Panini"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">
+                      Smoked Beef Mushroom & Cheese Panini
+                    </h3>
+                  </div>
+                </div>
+                <div class="card overlay-text">
+                  <img
+                    class="product-img"
+                    src="../assets/img/food/sandwiches/img8.jpg"
+                    alt="Grilled Smoked Beef & Cheese Decker"
+                  />
+                  <div class="product-text">
+                    <h3 class="overlay-text-title">
+                      Grilled Smoked Beef & Cheese Decker
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Sandwiches Section -->
+          </div>
+          <!-- End of Food Section -->
+        </div>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script type="text/javascript">
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".nav");
+        var social = document.querySelector(".social");
+        var header = document.querySelector("header");
+
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+        social.classList.toggle("active");
+
+        if (menuToggle.classList.contains("active")) {
+          header.classList.add("menu-active");
+        } else {
+          header.classList.remove("menu-active");
+        }
+      }
+
+      function changeTab(tab, productId) {
+        const tabs = document.querySelectorAll(".w-1-4");
+        tabs.forEach((t) => t.classList.remove("active"));
+
+        tab.classList.add("active");
+
+        const productItems = document.querySelectorAll(".product-category");
+        productItems.forEach((item) => {
+          if (item.id === productId) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
