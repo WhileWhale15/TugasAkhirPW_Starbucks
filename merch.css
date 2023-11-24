@@ -62,3 +62,37 @@
 .main-title {
   grid-area: main-title;
 }
+
+.container-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  background: transparent;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  background: transparent;
+}
+
+.container-text h1,
+.container-text p {
+  color: #f2f0eb;
+  background: transparent;
+}
+
+.container-text h1 {
+  font-size: 45px;
+  line-height: 115%;
+}
+
+img.product {
+  background: transparent;
+}
