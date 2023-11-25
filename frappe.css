@@ -14,7 +14,7 @@ header {
   background: #f2f0eb;
 }
 
-header .nav {
+header .navbar {
   position: relative;
   display: flex;
   margin-left: auto;
@@ -23,16 +23,32 @@ header .nav {
   gap: 30px;
 }
 
-header .nav li {
+header .navbar li {
   list-style: none;
 }
 
-header .nav li a {
+header .navbar li a {
   display: inline-block;
   color: #333;
   font-weight: 400;
   margin-left: 40px;
   text-decoration: none;
+  opacity: 0.75;
+}
+
+header .navbar li a:hover {
+  opacity: 1;
+}
+
+.navbar-underline {
+  --bs-nav-underline-gap: 0.95rem !important;
+  --bs-nav-underline-border-width: 0.115rem !important;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .show > .nav-link {
+  font-weight: 500 !important;
+  opacity: 1 !important;
 }
 
 .tab-container {
@@ -276,7 +292,7 @@ header .nav li a {
     display: none;
   }
 
-  header .nav {
+  header .navbar {
     display: none;
   }
 
@@ -302,7 +318,7 @@ header .nav li a {
     background-repeat: no-repeat;
   }
 
-  header .nav.nav.active {
+  header .navbar.navbar.active {
     position: fixed;
     top: 0;
     left: 0;
@@ -316,17 +332,17 @@ header .nav li a {
     z-index: 11;
   }
 
-  header .nav.nav.active li a {
+  header .navbar.navbar.active li a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navbar li a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navbar {
     margin-left: 0;
   }
 
@@ -476,7 +492,7 @@ header .nav li a {
     background-repeat: no-repeat;
   }
 
-  header .nav.nav.active {
+  header .navbar.navbar.active {
     position: fixed;
     top: 0;
     left: 0;
@@ -489,17 +505,17 @@ header .nav li a {
     z-index: 11;
   }
 
-  header .nav.nav.active li a {
+  header .navbar.navbar.active li a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navbar li a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navbar {
     margin-left: 0;
   }
 
@@ -652,7 +668,7 @@ header .nav li a {
     background-repeat: no-repeat;
   }
 
-  header .nav.nav.active {
+  header .navbar.navbar.active {
     position: fixed;
     top: 0;
     left: 0;
@@ -665,17 +681,17 @@ header .nav li a {
     z-index: 11;
   }
 
-  header .menu-active .nav li a {
+  header .menu-active .navbar li a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navbar li a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navbar {
     margin-left: 0;
   }
 
@@ -831,7 +847,7 @@ header .nav li a {
     background-repeat: no-repeat;
   }
 
-  header .nav.nav.active {
+  header .navbar.navbar.active {
     position: fixed;
     top: 0;
     left: 0;
@@ -844,17 +860,17 @@ header .nav li a {
     z-index: 11;
   }
 
-  header .menu-active .nav li a {
+  header .menu-active .navbar li a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navbar li a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navbar {
     margin-left: 0;
   }
 
@@ -1014,7 +1030,7 @@ header .nav li a {
     background-repeat: no-repeat;
   }
 
-  header .nav.nav.active {
+  header .navbar.navbar.active {
     position: fixed;
     top: 0;
     left: 0;
@@ -1027,17 +1043,17 @@ header .nav li a {
     z-index: 11;
   }
 
-  header .menu-active .nav li a {
+  header .menu-active .navbar li a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navbar li a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navbar {
     margin-left: 0;
   }
 
@@ -1197,7 +1213,7 @@ header .nav li a {
     background-repeat: no-repeat;
   }
 
-  header .nav.nav.active {
+  header .navbar.navbar.active {
     position: fixed;
     top: 0;
     left: 0;
@@ -1210,17 +1226,17 @@ header .nav li a {
     z-index: 11;
   }
 
-  header .menu-active .nav li a {
+  header .menu-active .navbar li a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navbar li a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navbar {
     margin-left: 0;
   }
 
@@ -1381,7 +1397,7 @@ header .nav li a {
     background-repeat: no-repeat;
   }
 
-  header .nav.nav.active {
+  header .navbar.navbar.active {
     position: fixed;
     top: 0;
     left: 0;
@@ -1394,17 +1410,17 @@ header .nav li a {
     z-index: 11;
   }
 
-  header .menu-active .nav li a {
+  header .menu-active .navbar li a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navbar li a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navbar {
     margin-left: 0;
   }
 
@@ -1432,7 +1448,7 @@ header .nav li a {
     padding-bottom: 4.5px;
   }
 
-  .container {
+  .containers {
     padding-left: 35px;
     margin-left: 0;
     margin-top: 30%;

@@ -11,10 +11,10 @@ header {
 }
 
 header .navigation {
-    margin-left: auto !important;
-    letter-spacing: 0.1rem !important;
-    margin-right: 5em !important;
-    gap: 30px !important;
+  margin-left: auto !important;
+  letter-spacing: 0.1rem !important;
+  margin-right: 5em !important;
+  gap: 30px !important;
 }
 
 header .navigation li a {
@@ -25,12 +25,30 @@ section.menu {
   background: #1e3932;
 }
 
+dl,
+ol,
+ul {
+  margin-bottom: 0 !important;
+}
+
+ol,
+ul {
+  padding-left: 0 !important;
+}
+
+img,
+svg {
+  vertical-align: 0 !important;
+}
+
 .container {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 0.2fr 2.2fr 0.4fr;
   grid-template-rows: 0.4fr 1.7fr 0.5fr;
   gap: 0px 0px;
+  width: auto !important;
+  max-width: 100% !important;
   grid-template-areas:
     ". . ."
     ". Main ."
@@ -101,6 +119,7 @@ section.menu {
 
 .w-1-4 {
   width: 200px;
+  list-style: none;
 }
 
 .w-1-4.active {
@@ -298,6 +317,10 @@ svg {
     grid-area: Tab-Container;
     width: 40px;
     margin-top: 1vh;
+  }
+
+  .Tab-Container ul li {
+    list-style: none;
   }
 
   .zoom-scroll-tabs {
