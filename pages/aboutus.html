@@ -16,33 +16,70 @@
   <body>
     <header>
       <a href="../index.html">
-        <img src="../assets/img/logo.png" class="logo" />
+        <img src="../assets/img/logo.png" class="logo" alt="Starkbucks" />
       </a>
       <div class="toggle" onclick="toggleMenu();"></div>
-      <ul class="nav center text-white">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/menu.html">Menu</a></li>
-        <li><a href="../pages/merch.html">Merch</a></li>
-        <li><a href="../pages/aboutus.html">About Us</a></li>
+      <ul class="navbar nav-underline center">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../pages/menu.html"
+            >Menu</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../pages/merch.html"
+            >Merch</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="../pages/aboutus.html"
+            >About Us</a
+          >
+        </li>
       </ul>
       <ul class="social">
         <li>
-          <a href="https://www.facebook.com/Starbucks/" target="_blank"
-            ><img src="../assets/img/facebook.png" id="facebook"
+          <a
+            href="https://www.facebook.com/Starbucks/"
+            target="_blank"
+            rel="noopener"
+            ><img src="../assets/img/facebook.png" id="facebook" alt="Facebook"
           /></a>
         </li>
         <li>
-          <a href="https://twitter.com/Starbucks" target="_blank"
-            ><img src="../assets/img/twitter.png" id="twitter"
+          <a href="https://twitter.com/Starbucks" target="_blank" rel="noopener"
+            ><img src="../assets/img/twitter.png" id="twitter" alt="Twitter"
           /></a>
         </li>
         <li>
-          <a href="https://www.instagram.com/starbucks/" target="_blank"
-            ><img src="../assets/img/instagram.png" id="instagram"
+          <a
+            href="https://www.instagram.com/starbucks/"
+            target="_blank"
+            rel="noopener"
+            ><img
+              src="../assets/img/instagram.png"
+              id="instagram"
+              alt="Instagram"
           /></a>
         </li>
       </ul>
     </header>
     <section></section>
   </body>
+
+  <script type="text/javascript">
+    function toggleMenu() {
+      var menuToggle = document.querySelector(".toggle");
+      var navigation = document.querySelector(".navigation");
+      var social = document.querySelector(".social");
+      menuToggle.classList.toggle("active");
+      navigation.classList.toggle("active");
+      social.classList.toggle("active");
+    }
+  </script>
 </html>
