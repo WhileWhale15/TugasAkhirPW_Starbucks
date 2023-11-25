@@ -1,14 +1,26 @@
-.container {
+* {
+  background: none;
+}
+
+body {
+  background-color: #f2f0eb !important;
+}
+
+h2 {
+  margin-bottom: 0rem !important;
+}
+
+.containers {
   display: grid;
   grid-template-columns: 0fr 3.2fr 0fr;
-  grid-template-rows: 0fr 0.75fr 5fr;
+  grid-template-rows: 0fr 0.75fr auto;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   gap: 0px 0px;
   margin: 0;
-  margin-top: 130px;
+  margin-top: 150px;
   width: 100%;
-  height: auto;
+  height: fit-content;
   max-height: 100%;
   grid-auto-flow: row;
   justify-items: center;
@@ -21,7 +33,7 @@
 .content {
   grid-area: content;
   background-color: #1e3932;
-  height: auto;
+  height: fit-content;
 }
 
 .title {
@@ -45,7 +57,6 @@
 .title .main-title h2 {
   color: #333;
   font-size: 4em;
-  line-height: 1.4em;
   font-weight: 500;
 }
 
@@ -61,11 +72,15 @@
 
 .subtitle {
   grid-area: subtitle;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .main-title {
   grid-area: main-title;
+}
+
+.main-title h2 p {
+  margin-bottom: 0rem;
 }
 
 .container-content {
@@ -77,6 +92,10 @@
   align-items: center;
   margin: 50px;
   background: transparent;
+}
+
+.container-img {
+  width: fit-content;
 }
 
 .container-text {
@@ -102,9 +121,33 @@
   font-size: 28px;
   line-height: 115%;
   font-weight: 200;
-  width: 92.5%;
 }
 
 img.product {
   background: transparent;
+}
+
+.carousel-container {
+  height: 100%;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex !important;
+  gap: 150px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 10% !important;
+}
+
+.carousel-indicators {
+  position: fixed !important;
+  margin-bottom: 1.5rem !important;
 }
