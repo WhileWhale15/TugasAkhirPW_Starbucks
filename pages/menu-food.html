@@ -60,24 +60,39 @@
         </ul>
         <ul class="social">
           <li>
-            <a href="https://www.facebook.com/Starbucks/" target="_blank"
-              ><img src="../assets/img/facebook.png" id="facebook"
+            <a
+              href="https://www.facebook.com/Starbucks/"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="../assets/img/facebook.png"
+                id="facebook"
+                alt="Facebook"
             /></a>
           </li>
           <li>
-            <a href="https://twitter.com/Starbucks" target="_blank"
-              ><img src="../assets/img/twitter.png" id="twitter"
+            <a
+              href="https://twitter.com/Starbucks"
+              target="_blank"
+              rel="noopener"
+              ><img src="../assets/img/twitter.png" id="twitter" alt="Twitter"
             /></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/starbucks/" target="_blank"
-              ><img src="../assets/img/instagram.png" id="instagram"
+            <a
+              href="https://www.instagram.com/starbucks/"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="../assets/img/instagram.png"
+                id="instagram"
+                alt="Instagram"
             /></a>
           </li>
         </ul>
       </header>
 
-      <div class="container">
+      <div class="containers">
         <div class="frappe-content">
           <div class="frappe-textBox">
             <h2>
@@ -660,7 +675,7 @@
         const productItems = document.querySelectorAll(".product-category");
         productItems.forEach((item) => {
           if (item.id === productId) {
-            item.style.display = "block";
+            item.style.display = "flex";
           } else {
             item.style.display = "none";
           }
