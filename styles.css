@@ -33,9 +33,9 @@ header .logo {
 
 header .navigation {
   position: relative;
-    display: flex;
-    letter-spacing: 0.1rem;
-    gap: 30px;
+  display: flex;
+  letter-spacing: 0.1rem;
+  gap: 30px;
 }
 
 header .navigation li {
@@ -48,6 +48,22 @@ header .navigation li a {
   font-weight: 400;
   margin-left: 40px;
   text-decoration: none;
+  opacity: 0.75;
+}
+
+header .navigation li a:hover {
+  opacity: 1;
+}
+
+.navbar-underline {
+  --bs-nav-underline-gap: 0.95rem !important;
+  --bs-nav-underline-border-width: 0.115rem !important;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .show > .nav-link {
+  font-weight: 500 !important;
+  opacity: 1 !important;
 }
 
 .content {

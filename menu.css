@@ -21,6 +21,11 @@ header .navigation li a {
   color: #f2f0eb;
 }
 
+.nav-underline .nav-link.active,
+.nav-underline .show > .nav-link {
+  color: #f2f0eb !important;
+}
+
 section.menu {
   background: #1e3932;
 }
@@ -135,13 +140,18 @@ svg {
 .goto {
   text-align: start;
   margin-top: 15px;
+  color: #f2f0eb;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .goto a {
   font-weight: 400;
+  color: #f2f0eb;
   letter-spacing: 0.085em;
   font-size: 13px;
   transition: transform 0.15s ease;
+  text-decoration: none;
 }
 
 svg {
@@ -153,6 +163,13 @@ svg {
   -webkit-transition: opacity 0.5s;
   transition: transform 0.15s ease;
   filter: opacity(0.5);
+}
+
+.goto svg {
+  transform: rotate(270deg);
+  transform-origin: right;
+  margin-left: 10px;
+  display: inline-block;
 }
 
 .goto svg:hover {

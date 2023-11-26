@@ -151,3 +151,1058 @@ img.product {
   position: fixed !important;
   margin-bottom: 1.5rem !important;
 }
+
+@media (max-width: 1205px) {
+  a {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  header {
+    position: fixed;
+    padding: 20px 60px;
+    z-index: 16;
+    background: #f2f0eb;
+  }
+
+  header .logo {
+    max-width: 60px;
+  }
+
+  header .social {
+    display: none;
+  }
+
+  header .navbar {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(./assets/img/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    z-index: 15;
+  }
+
+  .toggle.active {
+    position: fixed;
+    right: 40px;
+    background: url(./assets/img/close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header .navbar.navbar.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f2f0eb;
+    z-index: 11;
+  }
+
+  header .navbar.navbar.active li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+    margin-left: 0px;
+  }
+
+  header .navbar li a {
+    margin-left: 0;
+  }
+
+  header .navbar {
+    margin-left: 0;
+  }
+
+  header.menu-active .social {
+    position: fixed;
+    top: 85%;
+    left: 10%;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 25px;
+    z-index: 12;
+  }
+
+  header.menu-active .social #twitter {
+    display: inline-block;
+    transform: scale(1.1);
+    padding-bottom: 4.5px;
+  }
+
+  .containers {
+    padding-left: 0 !important;
+  }
+
+  .title .main-title h2 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 860px) {
+  a {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  header {
+    position: fixed;
+    padding: 20px 60px;
+    z-index: 16;
+    background: #f2f0eb;
+  }
+
+  header .logo {
+    max-width: 50px;
+  }
+
+  .toggle {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    background: url(./assets/img/menu.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    z-index: 15;
+  }
+
+  .toggle .active {
+    position: fixed;
+    right: 40px;
+    background: url(./assets/img/close.png) #f2f0eb;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header .navbar.navbar.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 11;
+  }
+
+  header .navbar.navbar.active li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+    margin-left: 0px;
+  }
+
+  header .navbar li a {
+    margin-left: 0;
+  }
+
+  header .navbar {
+    margin-left: 0;
+  }
+
+  header.menu-active .social {
+    position: fixed;
+    top: 85%;
+    left: 12%;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 25px;
+    z-index: 12;
+  }
+
+  header .social {
+    display: none;
+  }
+
+  header.menu-active .social #twitter {
+    display: inline-block;
+    transform: scale(1.1);
+    padding-bottom: 4.5px;
+  }
+
+  .containers {
+    padding-left: 0 !important;
+    margin-top: 25%;
+  }
+
+  .title .main-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .main-title h2 {
+    font-size: 3em;
+    width: 80%;
+  }
+
+  .title .subtitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .subtitle p {
+    font-size: 1.35em;
+    margin-top: 2%;
+    line-height: 115%;
+    width: 70%;
+  }
+
+  .content {
+    margin-top: 5% !important;
+  }
+
+  .container-content {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 0;
+    gap: 100px;
+  }
+
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex !important;
+    gap: 0px !important;
+    flex-direction: column;
+  }
+
+  .container-img img {
+    margin-bottom: 2.5em;
+  }
+
+  .container-text {
+    width: 80%;
+  }
+
+  .container-text h1 {
+    font-size: 32px;
+  }
+
+  .container-text p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 790px) {
+  a {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  header {
+    position: fixed;
+    padding: 20px 80px;
+    z-index: 16;
+    background: #f2f0eb;
+  }
+
+  header .logo {
+    max-width: 50px;
+  }
+
+  .toggle {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    background: url(./assets/img/menu.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    z-index: 15;
+  }
+
+  .toggle .active {
+    position: fixed;
+    right: 40px;
+    background: url(./assets/img/close.png) #f2f0eb;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header .navbar.navbar.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 11;
+  }
+
+  header .menu-active .navbar li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+    margin-left: 0px;
+  }
+
+  header .navbar li a {
+    margin-left: 0;
+  }
+
+  header .navbar {
+    margin-left: 0;
+  }
+
+  header.menu-active .social {
+    position: fixed;
+    top: 85%;
+    left: 12%;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 25px;
+    z-index: 12;
+  }
+
+  header .social {
+    display: none;
+  }
+
+  header.menu-active .social #twitter {
+    display: inline-block;
+    transform: scale(1.1);
+    padding-bottom: 4.5px;
+  }
+
+  .containers {
+    padding-left: 0 !important;
+    margin-top: 25%;
+  }
+
+  .title .main-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .main-title h2 {
+    font-size: 3em;
+    width: 80%;
+  }
+
+  .title .subtitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .subtitle p {
+    font-size: 1.35em;
+    margin-top: 2%;
+    line-height: 115%;
+    width: 70%;
+  }
+
+  .content {
+    margin-top: 5% !important;
+  }
+
+  .container-content {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 0;
+    gap: 100px;
+  }
+
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex !important;
+    gap: 0px !important;
+    flex-direction: column;
+  }
+
+  .container-img img {
+    margin-bottom: 2.5em;
+  }
+
+  .container-text {
+    width: 80%;
+  }
+
+  .container-text h1 {
+    font-size: 32px;
+  }
+
+  .container-text p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 680px) {
+  a {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  header {
+    position: fixed;
+    padding: 20px 60px;
+    z-index: 16;
+    background: #f2f0eb;
+  }
+
+  header .logo {
+    max-width: 55px;
+  }
+
+  .toggle {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    background: url(./assets/img/menu.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    z-index: 15;
+  }
+
+  .toggle .active {
+    position: fixed;
+    right: 40px;
+    background: url(./assets/img/close.png) #f2f0eb;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header .navbar.navbar.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 11;
+  }
+
+  header .menu-active .navbar li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+    margin-left: 0px;
+  }
+
+  header .navbar li a {
+    margin-left: 0;
+  }
+
+  header .navbar {
+    margin-left: 0;
+  }
+
+  header.menu-active .social {
+    position: fixed;
+    top: 85%;
+    left: 12%;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 25px;
+    z-index: 12;
+  }
+
+  header .social {
+    display: none;
+  }
+
+  header.menu-active .social #twitter {
+    display: inline-block;
+    transform: scale(1.1);
+    padding-bottom: 4.5px;
+  }
+
+  .containers {
+    padding-left: 0 !important;
+    margin-top: 25%;
+  }
+
+  .title .main-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .main-title h2 {
+    font-size: 3em;
+    width: 80%;
+  }
+
+  .title .subtitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .subtitle p {
+    font-size: 1.35em;
+    margin-top: 2%;
+    line-height: 115%;
+    width: 70%;
+  }
+
+  .content {
+    margin-top: 5% !important;
+  }
+
+  .container-content {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 0;
+    gap: 100px;
+  }
+
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex !important;
+    gap: 0px !important;
+    flex-direction: column;
+  }
+
+  .container-img img {
+    margin-bottom: 2.5em;
+  }
+
+  .container-text {
+    width: 80%;
+  }
+
+  .container-text h1 {
+    font-size: 32px;
+  }
+
+  .container-text p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 540px) {
+  a {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  header {
+    position: fixed;
+    padding: 20px 40px;
+    z-index: 16;
+    background: #f2f0eb;
+  }
+
+  header .logo {
+    max-width: 52px;
+  }
+
+  .toggle {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    background: url(./assets/img/menu.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    z-index: 15;
+  }
+
+  .toggle .active {
+    position: fixed;
+    right: 40px;
+    background: url(./assets/img/close.png) #f2f0eb;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header .navbar.navbar.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 11;
+  }
+
+  header .menu-active .navbar li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+    margin-left: 0px;
+  }
+
+  header .navbar li a {
+    margin-left: 0;
+  }
+
+  header .navbar {
+    margin-left: 0;
+  }
+
+  header.menu-active .social {
+    position: fixed;
+    top: 85%;
+    left: 12%;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 25px;
+    z-index: 12;
+  }
+
+  header .social {
+    display: none;
+  }
+
+  header.menu-active .social #twitter {
+    display: inline-block;
+    transform: scale(1.1);
+    padding-bottom: 4.5px;
+  }
+
+  .containers {
+    padding-left: 0 !important;
+    margin-top: 30%;
+  }
+
+  .title .main-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .main-title h2 {
+    font-size: 3em;
+    width: 80%;
+  }
+
+  .title .subtitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .subtitle p {
+    font-size: 1.35em;
+    margin-top: 2%;
+    line-height: 115%;
+    width: 70%;
+  }
+
+  .content {
+    margin-top: 5% !important;
+  }
+
+  .container-content {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 0;
+    gap: 100px;
+  }
+
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex !important;
+    gap: 0px !important;
+    flex-direction: column;
+  }
+
+  .container-img img {
+    margin-bottom: 2.5em;
+  }
+
+  .container-text {
+    width: 80%;
+  }
+
+  .container-text h1 {
+    font-size: 32px;
+  }
+
+  .container-text p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  a {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  header {
+    position: fixed;
+    padding: 20px 40px;
+    z-index: 16;
+    background: #f2f0eb;
+  }
+
+  header .logo {
+    max-width: 50px;
+  }
+
+  .toggle {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    background: url(./assets/img/menu.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    z-index: 15;
+  }
+
+  .toggle .active {
+    position: fixed;
+    right: 40px;
+    background: url(./assets/img/close.png) #f2f0eb;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header .navbar.navbar.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 11;
+  }
+
+  header .menu-active .navbar li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+    margin-left: 0px;
+  }
+
+  header .navbar li a {
+    margin-left: 0;
+  }
+
+  header .navbar {
+    margin-left: 0;
+  }
+
+  header.menu-active .social {
+    position: fixed;
+    top: 85%;
+    left: 12%;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 25px;
+    z-index: 12;
+  }
+
+  header .social {
+    display: none;
+  }
+
+  header.menu-active .social #twitter {
+    display: inline-block;
+    transform: scale(1.1);
+    padding-bottom: 4.5px;
+  }
+
+  .containers {
+    padding-left: 0 !important;
+    margin-top: 35%;
+  }
+
+  .title .main-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .main-title h2 {
+    font-size: 3em;
+    width: 80%;
+  }
+
+  .title .subtitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .subtitle p {
+    font-size: 1.35em;
+    margin-top: 2%;
+    line-height: 115%;
+    width: 70%;
+  }
+
+  .content {
+    margin-top: 5% !important;
+  }
+
+  .container-content {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 0;
+    gap: 100px;
+  }
+
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex !important;
+    gap: 0px !important;
+    flex-direction: column;
+  }
+
+  .container-img img {
+    margin-bottom: 2.5em;
+  }
+
+  .container-text {
+    width: 80%;
+  }
+
+  .container-text h1 {
+    font-size: 32px;
+  }
+
+  .container-text p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  a {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  header {
+    position: fixed;
+    padding: 20px 35px;
+    z-index: 16;
+    background: #f2f0eb;
+  }
+
+  header .logo {
+    max-width: 50px;
+  }
+
+  .toggle {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    background: url(./assets/img/menu.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    z-index: 15;
+  }
+
+  .toggle .active {
+    position: fixed;
+    right: 40px;
+    background: url(./assets/img/close.png) #f2f0eb;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header .navbar.navbar.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 11;
+  }
+
+  header .menu-active .navbar li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+    margin-left: 0px;
+  }
+
+  header .navbar li a {
+    margin-left: 0;
+  }
+
+  header .navbar {
+    margin-left: 0;
+  }
+
+  header.menu-active .social {
+    position: fixed;
+    top: 85%;
+    left: 12%;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 25px;
+    z-index: 12;
+  }
+
+  header .social {
+    display: none;
+  }
+
+  header.menu-active .social #twitter {
+    display: inline-block;
+    transform: scale(1.1);
+    padding-bottom: 4.5px;
+  }
+
+  .containers {
+    padding-left: 0 !important;
+    margin-top: 47.5%;
+  }
+
+  .title .main-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .main-title h2 {
+    font-size: 3em;
+    width: 80%;
+  }
+
+  .title .subtitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .subtitle p {
+    font-size: 1.35em;
+    margin-top: 2%;
+    line-height: 115%;
+    width: 70%;
+  }
+
+  .content {
+    margin-top: 5% !important;
+  }
+
+  .container-content {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 0;
+    gap: 100px;
+  }
+
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex !important;
+    gap: 0px !important;
+    flex-direction: column;
+  }
+
+  .container-img img {
+    margin-bottom: 2.5em;
+  }
+
+  .container-text {
+    width: 80%;
+  }
+
+  .container-text h1 {
+    font-size: 32px;
+  }
+
+  .container-text p {
+    font-size: 25px;
+  }
+}
