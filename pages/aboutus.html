@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../frappe.css" />
-    <link rel="stylesheet" href="../merch.css" />
+    <link rel="stylesheet" href="../aboutus.css" />
     <title>Starbucks | Menu</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
@@ -69,13 +78,62 @@
         </li>
       </ul>
     </header>
-    <section></section>
+
+    <section>
+      <div class="circle"></div>
+
+      <div class="containers">
+        <div class="container-img">
+          <div class="img-left">
+            <div class="img1">
+              <img
+                src="../assets/img/aboutus/img1.jpg"
+                alt="Starbucks Logo History"
+                width="275px"
+              />
+            </div>
+            <div class="img2">
+              <img src="../assets/img/aboutus/img2.jpg" alt="" width="275px" />
+            </div>
+          </div>
+          <div class="img-right">
+            <div class="img3">
+              <img src="../assets/img/aboutus/img3.jpg" alt="" width="320px" />
+            </div>
+          </div>
+        </div>
+        <div class="container-text">
+          <h2>
+            <p id="displayCategory">It's Us!</p>
+            It's
+            <span>Starbucks</span>
+          </h2>
+          <p>
+            Starbucks Coffee Indonesia opened its first outlet at Plaza
+            Indonesia on May 17, 2002. By January 2018, the franchise had
+            expanded to 326 branches across 22 major cities in Indonesia. PT
+            Mitra Adi Perkasa Tbk (MAPI) oversees the Starbucks franchise in
+            Indonesia. <br />The global Starbucks brand originated in 1971 in a
+            small shop at Seattle's Pike Place Market, focusing on offering
+            high-quality, fresh-roasted coffee beans. The name "Starbucks" draws
+            inspiration from Moby Dick, reflecting the romance of the open sea
+            and the coffee trading traditions of ancient times.
+          </p>
+        </div>
+        <div class="logo-history">
+          <img
+            src="../assets/img/aboutus/imgbottom.png"
+            alt="Starbucks Logo History"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 
   <script type="text/javascript">
     function toggleMenu() {
       var menuToggle = document.querySelector(".toggle");
-      var navigation = document.querySelector(".navigation");
+      var navigation = document.querySelector(".navbar");
       var social = document.querySelector(".social");
       menuToggle.classList.toggle("active");
       navigation.classList.toggle("active");

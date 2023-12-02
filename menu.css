@@ -204,7 +204,7 @@ svg {
     display: none;
   }
 
-  header .nav {
+  header .navigation {
     display: none;
   }
 
@@ -244,17 +244,17 @@ svg {
     z-index: 11;
   }
 
-  header .nav.nav.active li a {
+  header .navigation.navigation.active li a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navigation li a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navigation {
     margin-left: 0;
   }
 
@@ -432,11 +432,11 @@ svg {
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navigationli a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navigation {
     margin-left: 0;
   }
 
@@ -608,17 +608,17 @@ svg {
     z-index: 11;
   }
 
-  header .menu-active .nav li a {
+  header .menu-active .navigationli a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navigationli a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navigation {
     margin-left: 0;
   }
 
@@ -790,17 +790,17 @@ svg {
     z-index: 11;
   }
 
-  header .menu-active .nav li a {
+  header .menu-active .navigationli a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navigationli a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navigation {
     margin-left: 0;
   }
 
@@ -969,17 +969,17 @@ svg {
     z-index: 11;
   }
 
-  header .menu-active .nav li a {
+  header .menu-active .navigationli a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navigationli a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navigation {
     margin-left: 0;
   }
 
@@ -1149,17 +1149,17 @@ svg {
     z-index: 11;
   }
 
-  header .menu-active .nav li a {
+  header .menu-active .navigationli a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navigationli a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navigation {
     margin-left: 0;
   }
 
@@ -1331,17 +1331,17 @@ svg {
     z-index: 11;
   }
 
-  header .menu-active .nav li a {
+  header .menu-active .navigationli a {
     font-size: 1.5em;
     margin: 5px 0;
     margin-left: 0px;
   }
 
-  header .nav li a {
+  header .navigationli a {
     margin-left: 0;
   }
 
-  header .nav {
+  header .navigation {
     margin-left: 0;
   }
 
